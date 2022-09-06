@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js assignment</title>
+</head>
+<body>
+    
+
+<script>
+    class restaurantManager {
+
+        restaurantList = [
+            { name: "Gangaram", location: "Bolpur", city: "Santiniketan" },
+            { name: "Radhe Radhe", location: "Lalbag", city: "Darbhanga" },
+            { name: "Domino's", location: "Jaydev Bihar", city: "Bhubaneswar" },
+            { name: "Haldiram", location: "Durgapur", city: "Darbhanga" },
+            { name: "chappan bhog", location: "Lalbag", city: "Darbhanga" },
+            { name: "satluj", location: "Gandhi Market", city: "Darbhanga" }
+        ];
+
+        filterRestaurantByCity() {
+            this.restaurantList.forEach((restro) => {
+                console.log(restro.City);
+                
+            });
+        }
+
+        filterRestaurantByCity(city) {
+            return this.restaurantList.filter(item => item.city == city);
+            
+        }
+    }
+
+    let obj = new restaurantManager();
+    
+    var x = obj.filterRestaurantByCity("Darbhanga");
+    console.log(x);
+</script>
+</body>
+</html>

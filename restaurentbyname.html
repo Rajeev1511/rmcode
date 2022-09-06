@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filter by city</title>
+</head>
+<body>
+   <script>
+
+class restaurantManager {
+    restaurantList = [{
+        id: 1,
+        restaurantName: 'KFC',
+        address: 'Anand Vihar',
+        city: 'Delhi'
+    },
+    {
+        id: 2,
+        restaurantName: 'Domino',
+        address: 'Savita Vihar',
+        city: 'Delhi'
+    },
+    {
+        id: 3,
+        restaurantName: 'Burger King',
+        address: 'Civil Lines',
+        city: 'Pune'
+    },
+    {
+        id: 4,
+        restaurantName: 'Subway',
+        address: 'Cantonment',
+        city: 'Mumbai'
+    }]
+
+    printAllRestaurantNames = () => {
+        return this.restaurantList.map(restaurant => restaurant.restaurantName);
+    }
+
+    
+}
+
+const restaurantObj = new restaurantManager();
+var x = restaurantObj.printAllRestaurantNames();  
+console.log(x);    
+ 
+
+
+
+   </script> 
+</body>
+</html>
